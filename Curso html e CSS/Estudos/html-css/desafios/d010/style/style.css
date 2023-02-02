@@ -17,17 +17,22 @@ body {
 
 main {
     background-color: #ffffff;
-    padding: 5px;
-    width: 900px;
+
+    min-width: 320px;
+    max-width: 800px;
+
+    padding: 15px;
     margin: auto;
 
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
+
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.418);
 }
 
 header {
     background-image: linear-gradient(to top, #1B5C3C, #3FDB90);
-    margin: -10px -10px 0px -10px;
+    margin: -8px -10px 0px -10px;
     padding-top: 10px;
     height: 150px;
     
@@ -44,10 +49,26 @@ h2 {
     color: #1B5C3C;
 }
 
-.versao {
+h2.versao {
     font-family: 'idroid', sans-serif;
-    background-image: linear-gradient(to right);
+    background-image: linear-gradient(to right, #85E1B5, #ffffff);
     color: #1B5C3C;
+}
+
+div#video {
+    background-color: #1B5C3C;
+    margin: 0px -15px 0px -15px;
+    padding: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+div#video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
 }
 
 p {
@@ -57,8 +78,18 @@ p {
 }
 
 p#cabecalho{
-    font-family: 'Bebas Neue', cursive;
     text-align: center;
+    color: #ffffffb7
+}
+
+p#rodape {
+    background-color: #1B5C3C;
+    text-align: center;
+    margin: 10px -10px -10px -10px;
+    color: #ffffffb7
+}
+
+strong {
     color: white;
 }
 

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como surgiu o mascote do android?</title>
     <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
         <h1>Curiosidades de Tecnologia</h1>
 
         <p id="cabecalho">
-            Tudo aquilo que você sempre quis saber sobre o mundo <br> Tech, em um único lugar
+            Tudo aquilo que você sempre quis saber sobre o mundo <br> Tech, em um único lugar.
         </p>
     </header>
     <main>
@@ -31,9 +31,12 @@
             </p>
         </section>
 
-        <img src="./imgs/dan-droids.png" alt="Dan Droids">
-
         <section>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imgs/dan-droids-pq.png" type="image/png">
+                <img src="imgs/dan-droids.png" alt="Dan Droids">
+            </picture>
+
             <p>
                 Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.
             </p>
@@ -45,6 +48,32 @@
                 A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
             </p>
         </section>
+
+        <section>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imgs/irina-blok-pq.jpg" type="image/jpg">
+                <img src="imgs/irina-blok.jpg" alt="">
+            </picture>
+
+            <p>
+                A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.
+            </p>
+
+            <img src="imgs/bugdroid.png" alt="bugdroid">
+
+            <p>
+                A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.
+            </p>
+        </section>
+
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </main>
+    <footer>
+        <p id="rodape">
+            Site criado por <strong>Vitor Gabriel</strong> para o <strong>CursoemVideo</strong>.
+        </p>
+    </footer>
 </body>
 </html>
