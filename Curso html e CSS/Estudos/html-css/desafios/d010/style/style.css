@@ -4,3 +4,61 @@
     font-family: 'idroid';
     src: url(../fonts/idroid.otf) format(opentype);
 }
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../fonts/BebasNeue-Regular.ttf) format(truetype);
+    
+}
+
+body {
+    background-color: #85E1B5;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 5px;
+    width: 900px;
+    margin: auto;
+
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+header {
+    background-image: linear-gradient(to top, #1B5C3C, #3FDB90);
+    margin: -10px -10px 0px -10px;
+    padding-top: 10px;
+    height: 150px;
+    
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-family: 'idroid', sans-serif;
+    color: #1B5C3C;
+}
+
+.versao {
+    font-family: 'idroid', sans-serif;
+    background-image: linear-gradient(to right);
+    color: #1B5C3C;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+p#cabecalho{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: white;
+}
+
