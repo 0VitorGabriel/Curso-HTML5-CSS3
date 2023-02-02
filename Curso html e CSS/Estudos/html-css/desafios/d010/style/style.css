@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #85E1B5;
+    background-color: #C5EBD6;
 }
 
 main {
@@ -38,7 +38,7 @@ header {
     
 }
 
-section#extra {
+aside {
     background-color: #C5EBD6;
     border-radius: 10px;
 }
