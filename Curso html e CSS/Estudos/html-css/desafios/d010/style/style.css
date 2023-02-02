@@ -38,6 +38,11 @@ header {
     
 }
 
+section#extra {
+    background-color: #C5EBD6;
+    border-radius: 10px;
+}
+
 h1 {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
@@ -55,6 +60,14 @@ h2.versao {
     color: #1B5C3C;
 }
 
+h3 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    background-color: #2FA866;
+    color: #ffffff;
+}
+
 div#video {
     background-color: #1B5C3C;
     margin: 0px -15px 0px -15px;
@@ -65,7 +78,7 @@ div#video {
 
 div#video > iframe {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 10%;
     width: 80%;
     height: 80%;
@@ -89,7 +102,19 @@ p#rodape {
     color: #ffffffb7
 }
 
+p#direita {
+    text-align: right;
+}
+
 strong {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: #57866C;
+}
+
+a:hover {
+    text-decoration: underline;
+}
