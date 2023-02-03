@@ -17,8 +17,8 @@
     --color5: #063d1e;
 
     --standard-font: Arial, Verdana, Helvetica, sans-serif;
-    --featured-font: 'Bebas Neue', 'cursive';
-    --android-font: 'idroid', 'cursive';
+    --featured-font: 'Bebas Neue', cursive;
+    --android-font: 'idroid', cursive;
 }
 
 * {
@@ -31,6 +31,10 @@ body {
     font-family: var(--standard-font);
 }
 
+a.externo::after {
+    content: '\1F517\00A0';
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--color3), var(--color5));
     min-height: 150px;
@@ -41,6 +45,7 @@ header {
 header > h1 {
     font-family: var(--featured-font);
     font-size: 3em;
+    font-weight: normal;
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -65,7 +70,7 @@ nav {
 }
 
 nav > a {
-    color: #ffffff;
+    color: var(--color1);
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -86,18 +91,21 @@ main {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    box-shadow: 0px 0px 10px #0000007e;
 }
 
 main h1 {
     color: var(--color5);
     font-family: var(--android-font);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2 {
     color: var(--color4);
     font-family: var(--android-font);
     font-size: 1.5em;
+    font-weight: normal;
     background-image: linear-gradient(to right, var(--color1), transparent);
     text-indent: 8px;
 }
@@ -137,7 +145,59 @@ main img.pequena {
     margin: auto;
 }
 
+div.video {
+    background-color: var(--color5);
+    margin: 0px -20px 30px;
+    padding: 20px;
+    padding-bottom: 56.25%;
+
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #00000048;
+}
+
+aside > h3 {
+    background-color: var(--color4);
+    color: #ffffff;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
 footer {
     background-color: var(--color5);
     color: #ffffff;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color1);
 }
