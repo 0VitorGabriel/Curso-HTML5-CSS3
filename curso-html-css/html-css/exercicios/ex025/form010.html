@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1> 
+    <form action="cad.php" method="post">
+        <p>
+            <label for="iano">Em que ano voçê nasceu? </label>
+            <input type="number" name="ano" id="iano">
+        </p>
+        <p>
+            <label for="iidade">Sua idade: </label>
+            <output id="iidade"></output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form> 
+    <script>
+        let ano_nasc = document.querySelector('input#iano')
+        let output = document.querySelector('output#iidade')
+        ano_nasc.addEventListener('input', function () {
+            ano_atual = new Date().getFullYear()
+            output.innerHTML = ano_atual - Number(ano_nasc.value)
+        })  
+    </script>
+</body>
+</html>
