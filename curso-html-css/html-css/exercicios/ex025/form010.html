@@ -28,8 +28,10 @@
         </p>
     </form> 
     <script>
+        
         let ano_nasc = document.querySelector('input#iano')
         let output = document.querySelector('output#iidade')
+
         ano_nasc.addEventListener('input', function () {
             ano_atual = new Date().getFullYear()
             output.innerHTML = ano_atual - Number(ano_nasc.value)
