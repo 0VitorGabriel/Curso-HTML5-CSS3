@@ -1,3 +1,93 @@
 @charset "UTF-8";
 
 /* todas as demais midias */
+
+/* device breakpoints 
+pequenas telas: até 600px
+celular: 600px até 768px
+teblet: 768 até 992px
+desktop: 992 até 1220px
+telas maiores: 1220px acima
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid #000000;
+    }
+
+    main::after {
+        content: 'feito por Vitor Gabriel';
+        text-decoration: underline;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: #000000;
+    }
+
+    img#celular {
+        display: none;
+    }
+
+    img#impressora {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 75vw;
+    }
+
+    img#celular {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 80vw;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#computador {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 85vw;
+    }
+
+    img#computador, img#tablet {
+        display: none;
+    }
+
+    img#televisao {
+        display: block;
+    }
+}
